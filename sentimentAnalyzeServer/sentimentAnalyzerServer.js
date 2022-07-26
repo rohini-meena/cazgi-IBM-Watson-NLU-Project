@@ -18,6 +18,8 @@ variables that you set up in the .env file*/
  const api_key = process.env.API_KEY;
  const api_url = process.env.API_URL;
 
+ console.log(api_key);
+
 function getNLUInstance() {
     /*Type the code to create the NLU instance and return it.
     You can refer to the image in the instructions document
@@ -147,7 +149,7 @@ app.get("/text/sentiment", (req,res) => {
         return res.send("Could not do desired operation "+err);
     });
 });
-let server = app.listen(8080, () => {
+let server = app.listen(8081, () => {
     console.log('Listening', server.address().port)
 })
 

@@ -3,6 +3,7 @@ import './App.css';
 import EmotionTable from './EmotionTable.js';
 import React from 'react';
 
+console.log(111);
 class App extends React.Component {
   /*
   We are setting the component as a state named innercomp.
@@ -57,6 +58,8 @@ class App extends React.Component {
         this.setState({sentimentOutput:output});
       })});
   }
+
+
 
   sendForEmotionAnalysis = () => {
 
